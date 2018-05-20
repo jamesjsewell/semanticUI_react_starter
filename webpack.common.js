@@ -12,7 +12,7 @@ module.exports = {
                 use: 'raw-loader' 
             },
             {
-                test: /\.(png|svg|jpg|gif)$/,
+                test: /\.(png|svg|jpg|gif|ttf|woff2|woff|eot)$/,
                 use: [
                 'file-loader'
                 ]

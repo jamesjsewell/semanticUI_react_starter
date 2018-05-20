@@ -1,11 +1,26 @@
-import React from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import '../node_modules/semantic-ui/dist/semantic.min.css'
 import './style.scss';
-import example from './example/example_module.js'
+import {Segment, Button} from 'semantic-ui-react'
 
-const Index = () => {
-  return <div className="hello">Hello React! <div className="world">hello world</div></div>;
-};
 
-ReactDOM.render(<Index />, document.getElementById("index"));
+class Test extends Component {
+  constructor(props) {
+      super(props);
+
+  }
+
+  render() {
+  
+    return (
+        <Segment className="compact">
+          <Segment className="compact"><Button>test</Button></Segment>
+        </Segment>
+    );
+     
+  }
+}
+
+ReactDOM.render(<Test />, document.getElementById("index"));
 
