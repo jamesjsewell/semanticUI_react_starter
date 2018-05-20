@@ -4,7 +4,7 @@
 
 * In the end, semantic-ui-react components get flattened into regular html with regular semantic ui class names. It just makes writing the code faster.
 
-* In order for the final elements with semantic ui class names to appear styled, you still need to include the regular semantic ui css in your project. In this example, I installed semantic-ui as a dependency. All you have to do after you have ran npm install, is go into the node_modules folder, go into the semantic-ui folder and run in the command line: gulp build   Now you're all set. In this example i did:  import '../node_modules/semantic-ui/dist/semantic.min.css' in index.js. This tells webpack to apply the semantic-ui styles to the project, thereby styling all elements with semantic ui class names.
+* In order for the final elements with semantic ui class names to appear styled, you still need to include the regular semantic ui css in your project. In this example, I installed semantic-ui as a dependency. All you have to do after you have ran npm install, is go into the node_modules folder, go into the semantic-ui folder and run in the command line: ### gulp build ###   Now you're all set. In this example i did:  import '../node_modules/semantic-ui/dist/semantic.min.css' in index.js. This tells webpack to apply the semantic-ui styles to the project, thereby styling all elements with semantic ui class names.
 
 
 ## Webpack 4 setup ##
