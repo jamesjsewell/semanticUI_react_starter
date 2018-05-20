@@ -1,10 +1,18 @@
 # getting semantic-ui-react working #
 
-* semantic-ui-react is included as a dev dependency, so when you run the npm install command, it will be installed to the project's node_modules folder. You can import components from it in your javascript like you see in the index.js file of this repo. `import {Segment, Button} from 'semantic-ui-react'` for example
+* semantic-ui-react is included as a dependency, so when you run the `npm install` command, it will be installed to the project's `node_modules` folder. You can import components from it in your javascript like you see in the `index.js` file of this repo. `import {Segment, Button} from 'semantic-ui-react'` for example
 
-* In the end, semantic-ui-react components get flattened into regular html with regular semantic ui class names. It just makes writing the code faster.
+* In the end, semantic-ui-react components get flattened into regular html with regular semantic ui class names on the dom. It just makes writing the code faster.
 
-* In order for the final elements with semantic ui class names to appear styled, you still need to include the regular semantic ui css in your project. In this example, I installed semantic-ui as a dependency. All you have to do after you have ran npm install, is go into the node_modules folder, go into the semantic-ui folder (yes semantic-ui folder, not semantic-ui-react folder) and run in the command line: `gulp build`   Now you're all set. In this example i did:  `import '../node_modules/semantic-ui/dist/semantic.min.css'` in index.js. This tells webpack to apply the semantic-ui styles to the project, thereby styling all elements with semantic ui class names.
+* In order for the final elements with semantic ui class names to appear styled, you still need to include the regular semantic ui css in your project. In this example, I installed semantic-ui as a dependency. All you have to do after you have ran `npm install`, is go into the `node_modules` folder, go into the `semantic-ui` folder (yes `semantic-ui` folder, not `semantic-ui-react` folder) and run in the command line: `gulp build`   Now you're all set. In this example i did:  `import '../node_modules/semantic-ui/dist/semantic.min.css'` in `index.js`. This tells webpack to apply the semantic-ui styles to the project, thereby styling all elements with semantic ui class names.
+
+#### further clarification on installing semantic ui ####
+since semantic-ui is a dependency, after you have ran `npm install`, eventually during installation you will be prompted by the semantic-ui options. MAKE SURE TO ARROW OVER THE OPTION YOU WANT TO SELECT IN YOUR TERMINAL, it doesn't select one for you by default.
+* it will ask you where you want to install semantic-ui, type in `/node_modules`
+* `cd` into `node_modules`
+* `cd` into `semantic_ui`
+* run `gulp build`
+* all set
 
 
 ## Webpack 4 setup ##
